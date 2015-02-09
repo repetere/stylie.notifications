@@ -1,6 +1,6 @@
 /* Common, default styles for the notification box */
 
-.ns-box {
+.ts-ns-box {
 	position: fixed;
 	background: rgba(42,45,50,0.85);
 	padding: 22px;
@@ -12,31 +12,31 @@
 	font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
-.ns-box.ns-show {
+.ts-ns-box.ts-ns-show {
 	pointer-events: auto;
 }
 
-.ns-box a {
+.ts-ns-box a {
 	color: inherit;
 	opacity: 0.7;
 	font-weight: 700;
 }
 
-.ns-box a:hover,
-.ns-box a:focus {
+.ts-ns-box a:hover,
+.ts-ns-box a:focus {
 	opacity: 1;
 }
 
-.ns-box p {
+.ts-ns-box p {
 	margin: 0;
 }
 
-.ns-box.ns-show,
-.ns-box.ns-visible {
+.ts-ns-box.ts-ns-show,
+.ts-ns-box.ts-ns-visible {
 	pointer-events: auto;
 }
 
-.ns-close {
+.ts-ns-close {
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -49,13 +49,13 @@
 	backface-visibility: hidden;
 }
 
-.ns-close:hover, 
-.ns-close:focus {
+.ts-ns-close:hover, 
+.ts-ns-close:focus {
 	outline: none;
 }
 
-.ns-close::before,
-.ns-close::after {
+.ts-ns-close::before,
+.ts-ns-close::after {
 	content: '';
 	position: absolute;
 	width: 3px;
@@ -65,17 +65,17 @@
 	background: #6e6e6e;
 }
 
-.ns-close:hover::before,
-.ns-close:hover::after {
+.ts-ns-close:hover::before,
+.ts-ns-close:hover::after {
 	background: #fff;
 }
 
-.ns-close::before {
+.ts-ns-close::before {
 	-webkit-transform: translate(-50%,-50%) rotate(45deg);
 	transform: translate(-50%,-50%) rotate(45deg);
 }
 
-.ns-close::after {
+.ts-ns-close::after {
 	-webkit-transform: translate(-50%,-50%) rotate(-45deg);
 	transform: translate(-50%,-50%) rotate(-45deg);
 }

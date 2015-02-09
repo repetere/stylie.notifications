@@ -1,11 +1,11 @@
 /* Growl-style notifications */
-.ns-attached {
+.ts-ns-attached {
     left: 30px;
     max-width: 300px;
 }
 
-[class^="ns-effect-"].ns-attached.ns-hide,
-[class*=" ns-effect-"].ns-attached.ns-hide {
+[class^="ts-ns-effect-"].ts-ns-attached.ts-ns-hide,
+[class*=" ts-ns-effect-"].ts-ns-attached.ts-ns-hide {
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
@@ -13,7 +13,7 @@
 /* Individual effects */
 
 /* Flip */
-.ns-effect-flip {
+.ts-ns-effect-flip {
     background: #9bd1a2;
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
@@ -24,25 +24,25 @@
     backface-visibility: hidden;
 }
 
-.ns-effect-flip .ns-close::before,
-.ns-effect-flip .ns-close::after {
+.ts-ns-effect-flip .ts-ns-close::before,
+.ts-ns-effect-flip .ts-ns-close::after {
     background: #5a9862;
 }
 
-.ns-effect-flip .ns-close:hover::before,
-.ns-effect-flip .ns-close:hover::after {
+.ts-ns-effect-flip .ts-ns-close:hover::before,
+.ts-ns-effect-flip .ts-ns-close:hover::after {
     background: #4e8455;
 }
 
-.ns-effect-flip.ns-show,
-.ns-effect-flip.ns-hide {
+.ts-ns-effect-flip.ts-ns-show,
+.ts-ns-effect-flip.ts-ns-hide {
     -webkit-animation-name: animFlipFront;
     animation-name: animFlipFront;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
 }
 
-.ns-effect-flip.ns-hide {
+.ts-ns-effect-flip.ts-ns-hide {
     -webkit-animation-name: animFlipBack;
     animation-name: animFlipBack;
 }
@@ -68,7 +68,7 @@
 }
 
 /* Bouncy Flip adapted from animate.css by Dan Eden: http://daneden.github.io/animate.css/ */
-.ns-effect-bouncyflip {
+.ts-ns-effect-bouncyflip {
     -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
     background: #fff;
@@ -77,29 +77,29 @@
     box-shadow: 0 13px 10px -5px rgba(0,0,0,0.2);
 }
 
-.ns-effect-bouncyflip .icon {
+.ts-ns-effect-bouncyflip .icon {
     position: absolute;
     display: block;
     top: 2em;
     left: 2em;
 }
 
-.ns-effect-bouncyflip p {
+.ts-ns-effect-bouncyflip p {
     padding: 0.5em 0.8em 0.8em 3.5em;
 }
 
-.ns-effect-bouncyflip .ns-close::after,
-.ns-effect-bouncyflip .ns-close::before {
+.ts-ns-effect-bouncyflip .ts-ns-close::after,
+.ts-ns-effect-bouncyflip .ts-ns-close::before {
     background: #484860;
 }
 
-.ns-effect-bouncyflip .ns-close:hover::after,
-.ns-effect-bouncyflip .ns-close:hover::before {
+.ts-ns-effect-bouncyflip .ts-ns-close:hover::after,
+.ts-ns-effect-bouncyflip .ts-ns-close:hover::before {
     background: #545484;
 }
 
-.ns-effect-bouncyflip.ns-show,
-.ns-effect-bouncyflip.ns-hide {
+.ts-ns-effect-bouncyflip.ts-ns-show,
+.ts-ns-effect-bouncyflip.ts-ns-hide {
     -webkit-animation-name: flipInX;
     animation-name: flipInX;
     -webkit-animation-duration: 0.8s;
@@ -169,7 +169,7 @@
     }
 }
 
-.ns-effect-bouncyflip.ns-hide {
+.ts-ns-effect-bouncyflip.ts-ns-hide {
     -webkit-animation-name: flipInXSimple;
     animation-name: flipInXSimple;
     -webkit-animation-duration: 0.3s;
@@ -200,7 +200,7 @@
 }
 
 @media screen and (max-width: 25em) {
-    .ns-attached {
+    .ts-ns-attached {
         left: 30px;
         max-width: none;
         right: 30px;

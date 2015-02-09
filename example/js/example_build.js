@@ -78,7 +78,7 @@ StylieNotifications.prototype.options = {
 	// ...
 	effect: 'slide',
 	// notice, warning, error, success
-	// will add class ns-type-warning, ns-type-error or ns-type-success
+	// will add class ts-ns-type-warning, ts-ns-type-error or ts-ns-type-success
 	type: 'error',
 	// if the user doesn´t close the notification then we remove it 
 	// after the following time
@@ -102,11 +102,11 @@ StylieNotifications.prototype._init = function () {
 
 	// create HTML structure
 	this.ntf = document.createElement('div');
-	this.ntf.className = 'ns-box ns-' + this.options.layout + ' ns-effect-' + this.options.effect + ' ns-type-' + this.options.type;
-	var strinner = '<div class="ns-box-inner">';
+	this.ntf.className = 'ts-ns-box ts-ns-' + this.options.layout + ' ts-ns-effect-' + this.options.effect + ' ts-ns-type-' + this.options.type;
+	var strinner = '<div class="ts-ns-box-inner">';
 	strinner += this.options.message;
 	strinner += '</div>';
-	strinner += '<span class="ns-close"></span></div>';
+	strinner += '<span class="ts-ns-close"></span></div>';
 	this.ntf.innerHTML = strinner;
 	// console.log(this.options);
 
@@ -133,7 +133,7 @@ StylieNotifications.prototype._init = function () {
 StylieNotifications.prototype._initEvents = function () {
 	var self = this;
 	// dismiss notification
-	this.ntf.querySelector('.ns-close').addEventListener('click', function () {
+	this.ntf.querySelector('.ts-ns-close').addEventListener('click', function () {
 		self.dismiss();
 	});
 	this.emit('notificationsEventsInitialized');
@@ -150,9 +150,9 @@ StylieNotifications.prototype._dismiss = function () {
 	if (this.options.ttl) {
 		clearTimeout(this.dismissttl);
 	}
-	classie.remove(this.ntf, 'ns-show');
+	classie.remove(this.ntf, 'ts-ns-show');
 	setTimeout(function () {
-		classie.add(self.ntf, 'ns-hide');
+		classie.add(self.ntf, 'ts-ns-hide');
 
 		// callback
 		self.options.onClose();
@@ -188,8 +188,8 @@ StylieNotifications.prototype._dismiss = function () {
  */
 StylieNotifications.prototype._show = function () {
 	this.active = true;
-	classie.remove(this.ntf, 'ns-hide');
-	classie.add(this.ntf, 'ns-show');
+	classie.remove(this.ntf, 'ts-ns-hide');
+	classie.add(this.ntf, 'ts-ns-show');
 	this.options.onOpen();
 
 	this.emit('showNotification', this.ntf);
