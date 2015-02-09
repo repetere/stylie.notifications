@@ -1,18 +1,18 @@
-<a name="ComponentModals"></a>
-#class: ComponentModals
+<a name="StylieNotifications"></a>
+#class: StylieNotifications
 **Members**
 
-* [class: ComponentModals](#ComponentModals)
-  * [new ComponentModals(el, options)](#new_ComponentModals)
-  * [componentModals.options](#ComponentModals#options)
-  * [componentModals._init()](#ComponentModals#_init)
-  * [componentModals._initEvents()](#ComponentModals#_initEvents)
-  * [componentModals._hide(modal)](#ComponentModals#_hide)
-  * [componentModals._show(modal)](#ComponentModals#_show)
+* [class: StylieNotifications](#StylieNotifications)
+  * [new StylieNotifications(el, options)](#new_StylieNotifications)
+  * [stylieNotifications.options](#StylieNotifications#options)
+  * [stylieNotifications._init()](#StylieNotifications#_init)
+  * [stylieNotifications._initEvents()](#StylieNotifications#_initEvents)
+  * [stylieNotifications._dismiss(modal)](#StylieNotifications#_dismiss)
+  * [stylieNotifications._show(modal)](#StylieNotifications#_show)
 
-<a name="new_ComponentModals"></a>
-##new ComponentModals(el, options)
-A module that represents a ComponentModals object, a componentTab is a page composition tool.
+<a name="new_StylieNotifications"></a>
+##new StylieNotifications(el, options)
+A module that represents a StylieNotifications object, a componentTab is a page composition tool.
 
 **Params**
 
@@ -22,28 +22,28 @@ A module that represents a ComponentModals object, a componentTab is a page comp
 **Author**: Yaw Joseph Etse  
 **License**: MIT  
 **Copyright**: Copyright (c) 2014 Typesettin. All rights reserved.  
-<a name="ComponentModals#options"></a>
-##componentModals.options
+<a name="StylieNotifications#options"></a>
+##stylieNotifications.options
 module default configuration
 
-<a name="ComponentModals#_init"></a>
-##componentModals._init()
-initializes modals and shows current tab.
+<a name="StylieNotifications#_init"></a>
+##stylieNotifications._init()
+initializes notifications and shows current tab.
 
-<a name="ComponentModals#_initEvents"></a>
-##componentModals._initEvents()
+<a name="StylieNotifications#_initEvents"></a>
+##stylieNotifications._initEvents()
 handle tab click events.
 
-<a name="ComponentModals#_hide"></a>
-##componentModals._hide(modal)
+<a name="StylieNotifications#_dismiss"></a>
+##stylieNotifications._dismiss(modal)
 Hides a modal component.
 
 **Params**
 
 - modal `string` - name  
 
-<a name="ComponentModals#_show"></a>
-##componentModals._show(modal)
+<a name="StylieNotifications#_show"></a>
+##stylieNotifications._show(modal)
 Shows a modal component.
 
 **Params**
