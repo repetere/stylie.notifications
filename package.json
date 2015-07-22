@@ -2,7 +2,7 @@
   "title": "Stylie Notifications",
   "name": "stylie.notifications",
   "description": "Simple ideas & effects for website notifications, ported from: http://tympanus.net/Development/NotificationStyles/growl-genie.html",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
@@ -20,7 +20,7 @@
     "util-extend": ">=1.0.1"
   },
   "peerDependencies": {
-    "stylie": "^1.5.1"
+    "stylie": "^2.0.0"
   },
   "devDependencies": {
     "browserify": "~4.2.1",
